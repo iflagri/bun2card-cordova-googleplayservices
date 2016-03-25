@@ -14,8 +14,10 @@
   <name>Google Play Services for Android</name>
 
   <platform name="android">
-    <framework src="libs/google-play-services_lib" custom="true" />
-
+    <framework src="com.google.android.gms:play-services-analytics:+" />
+    <framework src="com.google.android.gms:play-services-gcm:+" />
+    <framework src="com.google.android.gms:play-services-vision:+" />
+    <framework src="com.google.android.gms:play-services-ads:+" />
     <config-file target="AndroidManifest.xml" parent="/manifest/application">
         <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
     </config-file>
